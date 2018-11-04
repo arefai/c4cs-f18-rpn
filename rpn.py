@@ -2,6 +2,7 @@
 # Amir Refai
 
 import readline
+from termcolor import colored
 
 def calculate(arg):
 	stack = []
@@ -31,7 +32,17 @@ def calculate(arg):
 def main():
 	while True:
 		try:
-			result = calculate(input("rpn calc> "))
+			text_in = input("rpn calc> ") 
+			result = calculate(text_in)
+			
+			string = ""
+			for token in text_in.split():
+				if token == "+" or token == "-" or token == "^" or token=="%":
+					string += colored(token, 'magenta') + " "
+				else:
+					string += colored(token, 'red') + " "
+
+			print(string)
 			print(result)
 		except ValueError:
 			pass
