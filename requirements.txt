@@ -1,2 +1,2 @@
-python-coveralls
+coveralls-python
 coverage
