@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # Amir Refai
 
+import readline
+
 def calculate(arg):
 	stack = []
 
