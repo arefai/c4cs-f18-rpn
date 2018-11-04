@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Amir Refai
 
 def calculate(arg):
 	stack = []
